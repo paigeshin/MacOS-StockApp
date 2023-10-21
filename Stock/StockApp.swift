@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct StockApp: App {
+    
+    private let appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
             HomeScreen()
                 .frame(minWidth: 600, minHeight: 600)
-                .environmentObject(AppState())
+                .environmentObject(self.appState.routeState)
+                .environmentObject(self.appState.stockState)
         }
     }
 }

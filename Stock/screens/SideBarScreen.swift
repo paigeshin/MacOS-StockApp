@@ -9,16 +9,11 @@ import SwiftUI
 
 struct SideBarScreen: View {
     
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var stocksState: StocksState
     
     var body: some View {
         VStack(alignment: .leading) {
-            StockListScreen(vm: StockListViewModel(appState: self.appState))
+            StockListScreen(vm: StockListViewModel(stocksState: self.stocksState))
         } //: VStack
     }
-}
-
-#Preview {
-    SideBarScreen()
-        .environmentObject(AppState())
 }

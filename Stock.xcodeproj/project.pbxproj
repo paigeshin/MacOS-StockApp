@@ -39,6 +39,8 @@
 		C4297E942AE3F3E100FB539C /* NewsArticleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4297E932AE3F3E100FB539C /* NewsArticleHeaderView.swift */; };
 		C4297E962AE3F7FC00FB539C /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4297E952AE3F7FC00FB539C /* LineChartView.swift */; };
 		C4297E982AE3FA7A00FB539C /* StockGraphBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4297E972AE3FA7A00FB539C /* StockGraphBackgroundView.swift */; };
+		C4297E9A2AE3FC6E00FB539C /* WebViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4297E992AE3FC6E00FB539C /* WebViewScreen.swift */; };
+		C4297E9C2AE3FC9100FB539C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4297E9B2AE3FC9100FB539C /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		C4297E932AE3F3E100FB539C /* NewsArticleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleHeaderView.swift; sourceTree = "<group>"; };
 		C4297E952AE3F7FC00FB539C /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		C4297E972AE3FA7A00FB539C /* StockGraphBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockGraphBackgroundView.swift; sourceTree = "<group>"; };
+		C4297E992AE3FC6E00FB539C /* WebViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewScreen.swift; sourceTree = "<group>"; };
+		C4297E9B2AE3FC9100FB539C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				C4297E6D2AE3E26400FB539C /* StockListScreen.swift */,
 				C4297E832AE3EB2F00FB539C /* NewsArticleListScreen.swift */,
 				C4297E8F2AE3F1B100FB539C /* StockDetailScreen.swift */,
+				C4297E992AE3FC6E00FB539C /* WebViewScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				C4297E932AE3F3E100FB539C /* NewsArticleHeaderView.swift */,
 				C4297E952AE3F7FC00FB539C /* LineChartView.swift */,
 				C4297E972AE3FA7A00FB539C /* StockGraphBackgroundView.swift */,
+				C4297E9B2AE3FC9100FB539C /* WebView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 				C4297E822AE3EA7400FB539C /* StockArticleViewModel.swift in Sources */,
 				C4297E8E2AE3F09500FB539C /* StockDetailViewModel.swift in Sources */,
 				C4297E882AE3EBF400FB539C /* ArticleViewModel.swift in Sources */,
+				C4297E9A2AE3FC6E00FB539C /* WebViewScreen.swift in Sources */,
 				C4297E802AE3EA4900FB539C /* StockArticleListViewModel.swift in Sources */,
+				C4297E9C2AE3FC9100FB539C /* WebView.swift in Sources */,
 				C4297E902AE3F1B100FB539C /* StockDetailScreen.swift in Sources */,
 				C4297E472AE3DC0E00FB539C /* WebService.swift in Sources */,
 				C4297E3F2AE3DB2E00FB539C /* HomeScreen.swift in Sources */,

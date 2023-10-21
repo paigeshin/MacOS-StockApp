@@ -9,11 +9,11 @@ import SwiftUI
 
 struct NewsArticleHeaderView: View {
     
-    @EnvironmentObject private var appState: AppState
+    @EnvironmentObject private var stocksState: StocksState
     let symbol: String
     
     var body: some View {
-        if let stock = self.appState.stockBySymbol(self.symbol) {
+        if let stock = self.stocksState.stockBySymbol(self.symbol) {
             HStack(alignment: .firstTextBaseline) {
                 VStack(alignment: .leading, content: {
                     Text(stock.symbol)

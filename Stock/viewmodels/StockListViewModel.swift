@@ -10,20 +10,20 @@ import Foundation
 @MainActor
 final class StockListViewModel: ObservableObject {
     
-    let appState: AppState
+    let stocksState: StocksState
 
-    init(appState: AppState) {
-        self.appState = appState
+    init(stocksState: StocksState) {
+        self.stocksState = stocksState
     }
 
     var stocks: [StockViewModel] {
-        self.appState.stocks
+        self.stocksState.stocks
     }
     
     func getStocks() async {
         do {
             let stocks = try await WebService().fetchStocks()
-            self.appState.stocks = stocks.map(StockViewModel.init)
+            self.stocksState.stocks = stocks.map(StockViewModel.init)
         } catch {
             print(error)
         }

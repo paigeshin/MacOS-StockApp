@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StockDetailScreen: View {
     
+    @EnvironmentObject private var routeState: RouteState
     let stock: StockViewModel
     @StateObject private var vm = StockDetailViewModel()
     
@@ -35,7 +36,11 @@ struct StockDetailScreen: View {
                 
                 Spacer()
                 
-                ArticlesGridView(articles: self.vm.articles)
+                ArticlesGridView(articles: self.vm.articles, onSelected: { article in
+                    guard let url = article.url else { return }
+                    self.routeState.push(.stockDetail(self.stock))
+                    self.routeState.route = .articleDetail(url)
+                })
             } //: VStack
             .task(id: self.stock) {
                 await self.vm.fetchArticlesByStock(stock: self.stock)

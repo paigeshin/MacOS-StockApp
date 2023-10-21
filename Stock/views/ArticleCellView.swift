@@ -10,6 +10,7 @@ import SwiftUI
 struct ArticleCellView: View {
     
     let article: ArticleViewModel
+    let onSelected: (ArticleViewModel) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -29,6 +30,9 @@ struct ArticleCellView: View {
                 .font(.title)
                 .fontWeight(.bold)
         } //: VStack
-    }
+        .onTapGesture {
+            self.onSelected(self.article)
+        }
+    } //: body
 }
 

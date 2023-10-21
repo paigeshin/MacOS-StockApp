@@ -10,7 +10,7 @@ import SwiftUI
 struct StockListView: View {
     
     let stocks: [StockViewModel]
-    @EnvironmentObject private var appState: AppState
+    @EnvironmentObject private var routState: RouteState
 
     var body: some View {
         List {
@@ -19,7 +19,7 @@ struct StockListView: View {
             
             ForEach(self.stocks) { stock in
                 StockCellView(stock: stock, onSelected: { selectedStock in
-                    self.appState.route = .stockDetail(selectedStock)
+                    self.routState.route = .stockDetail(selectedStock)
                 })
             } //: ForEach
             

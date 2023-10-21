@@ -39,7 +39,3 @@ struct StockListScreen: View {
         })
     } //: body
 }
-
-#Preview {
-    StockListScreen(vm: StockListViewModel(appState: AppState()))
-}
