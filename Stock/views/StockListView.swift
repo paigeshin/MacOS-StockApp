@@ -15,7 +15,9 @@ struct StockListView: View {
     var body: some View {
         List {
             
-            BusinessNewsHeaderView()
+            BusinessNewsHeaderView(onSelected:{
+                self.routState.route = .businessArticles
+            })
             
             ForEach(self.stocks) { stock in
                 StockCellView(stock: stock, onSelected: { selectedStock in

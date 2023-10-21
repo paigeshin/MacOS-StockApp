@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BusinessNewsHeaderView: View {
+    
+    var onSelected: () -> Void
+    
     var body: some View {
         VStack(alignment: .leading, content: {
             Text("Business News")
@@ -21,9 +24,9 @@ struct BusinessNewsHeaderView: View {
         .frame(maxWidth: .infinity)
         .background(Color(red: 0.363, green: 0.354, blue: 0.383))
         .clipShape(RoundedRectangle(cornerRadius: 6))
+        .onTapGesture {
+            self.onSelected()
+        }
     } //: body
 }
 
-#Preview {
-    BusinessNewsHeaderView()
-}
