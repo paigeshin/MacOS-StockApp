@@ -51,4 +51,10 @@ self.vm.stocks.filter { $0.symbol.starts(with: self.search.uppercased()) }
 
 https://newsapi.org/
 
+### SwiftUI task modifier dependency
 
+```swift
+            .task(id: self.stock) {
+                await self.vm.fetchArticlesByStock(stock: self.stock)
+            }
+```

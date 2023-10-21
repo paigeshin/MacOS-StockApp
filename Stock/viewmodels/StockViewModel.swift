@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StockViewModel: Identifiable {
+struct StockViewModel: Identifiable, Equatable {
     
     private var stock: Stock
     
